@@ -1,13 +1,20 @@
 # Make your shoe class here!
 
-class Book
-    attr_accessor :cost
-    attr_reader :brand
-   
+class Shoe
+    attr_accessor :brand, :color, :size, :material, :condition
     def initialize(brand)
-      @brand = brand
+        @brand = brand
+        @color = color
+        @size = size
+        @material = material
+        @condition = condition
     end
-   
 
-   
-  end
+        
+
+    def cobble()
+        @condition = "new"
+        puts "Your shoe is as good as new!"
+    end
+
+end
